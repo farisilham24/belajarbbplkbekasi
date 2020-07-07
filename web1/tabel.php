@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<body>
+  <?php 
+  $nama1 = "faris"; 
+  $nama2 = "sandi";
+  $email1= "faris@gmail.com";  
+  $email2= "sandi@gmail.com";
+  $komentar1= "1";
+  $komentar2= "2";
+  ?>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 border bg-primary text-white" style="height:100px">header </div>
+      <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="JavaScript:void(0)">Data Komentar</a>
+        <button class="navbar-toggler navbar-toggler-right"
+        type="button" data-toggle="collapse"
+        data-target="#navb">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navb">
+       <ul class="navbar-nav mr-auto">  </ul>
+       <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" 
+        placeholder="search">
+        <button class="btn btn-success my-2 my-sm-0" type="button">search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="col-12 col-md-8 col-lg-10 bg-warning text-dark text-center" style="min-height: 650px">
+   <form>
+     <table class="table table-bordered bg-light table-hover " style="margin-top: 30px">
+      <thead>
+        <tr >
+          <th>No</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Komentar</th>
+        </tr>
+      </thead>
+      <tbody  class="table ">
+        <tr>
+         <th>1</th>
+         <td><?php echo $nama1; ?></td>
+         <td><?php echo $email1; ?> </td>
+         <td><?php echo  $komentar1; ?></td>
+       </tr>
+       <tr>
+         <th>2</th>
+         <td><?php echo  $nama2; ?></td>
+         <td><?php echo  $email2; ?> </td>
+         <td><?php echo  $komentar2; ?></td>
+       </tr>
+     </tbody>
+   </table>
+ </form>
+</div>
+
+<div class="col-12 col-md-4 col-lg-2 bg-danger text-light">banner </div>
+<div class="col-12 bg-info text-light">footer</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
